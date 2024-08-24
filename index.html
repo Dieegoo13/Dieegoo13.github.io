@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- FONTES DO GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- FIM FONTES DO GOOGLE -->
+
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <div class="interface">
+
+         <nav class="menu-desktop">   <!-- NAVEGAÇÂO DOS MENUS -->
+
+            <ul>
+                <li><a href="#secão-home">Sobre mim</a></li>
+                <li><a href="#secão-tecnologias">Especialidades (formação)</a></li>
+                <li><a href="#secão-projetos">Portfólio</a></li>
+            </ul>
+
+         </nav> 
+
+         <div class="btn-contato">
+            <a href="#secao-contato">
+               <button>Contato</button>
+            </a>
+         </div>
+
+        </div>  <!-- interface -->
+    </header>
+
+    <main>
+        <!-- Seção principal do site -->
+        <section id="secão-home" class="topo-do-site">   <!-- SEÇÂO HOME -->
+            <div class="interface">
+                <div class="flex">
+                     <!-- Container para o texto e imagem -->
+                    <div class="txt-topo-site">
+                        <h2 class="titulo">MUITO PRAZER <span>SOU DIEGO.</span> </h2>
+                         <!-- Parágrafo centralizado com quebra de linha -->
+                        <p class="centralizado">
+                            Meu nome é Diego, sou estudante de desenvolvimento de sistemas, com foco em back-end. <br> Tenho interesse em criar soluções escaláveis, e estou em constante aprendizado para aprimorar <br> minhas habilidades em linguagens como PHP, Python, MySQL e em frameworks como Laravel e Django. <br> Estou sempre em busca de novos desafios que me permitam crescer profissionalmente e contribuir de maneira <br> significativa em projetos de desenvolvimento de software.
+                        </p>
+                        <!-- Botão para contato -->
+                        <div class="btn-contato">
+                            <a href="#secao-contato">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div>
+                      <!-- Container para a imagem -->
+                    <div class="img-topo-site">
+                        <img src="imagens/Untitled Project.jpg" alt="foto" width="220px" height="220px">
+                    </div>
+                </div>
+            </div>
+        </section>  <!-- topo do site -->
+
+        <section id="secão-tecnologias" class="tecnologias">
+            <!-- Seção de Tecnologias e formação-->
+             <div class="interface">
+                <!-- Contêiner principal da seção -->
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <!-- Título da seção com destaque -->
+                  <div class="flex">
+                    <!-- Container para os boxes de especialidades -->
+                    <div class="especialidade-box">
+                        <!-- Box para especialidade PHP -->
+                        <img src="imagens/icone-php.png" alt="logo-php">
+                        <h3>PHP</h3>
+                        <p>
+                            PHP é uma linguagem de programação amplamente utilizada para desenvolvimento web.  Com sua flexibilidade, PHP se adapta a diversas necessidades, desde pequenos sites até grandes sistemas web. integrando-se perfeitamente a bancos de dados para gerenciar e exibir informações de forma eficiente. 
+                        </p>
+                    </div>
+
+                    <div class="especialidade-box">
+                         <!-- Box para especialidade Python -->
+                        <img src="imagens/icone-python.webp" alt="logo-python">
+                        <h3>Python</h3>
+                        <p>
+                            Python é uma linguagem de programação poderosa e versátil, conhecida por sua simplicidade e clareza. É utilizada em uma ampla gama de aplicações, desde desenvolvimento web até ciência de dados e automação. Com frameworks como Django, Python facilita a criação de soluções robustas e escaláveis, sendo uma ferramenta valiosa para desenvolvedores em diversos campos.
+                        </p>
+                    </div>
+
+                    <div class="especialidade-box">
+                        <!-- Box para especialidade MySQL -->
+                        <img src="imagens/icone-mySql.png" alt="logo-MySQL">
+                        <h3>MySQL</h3>
+                        <p>
+                            MySQL é um sistema de gerenciamento de banco de dados relacional conhecido por sua confiabilidade e desempenho. Utilizado em conjunto com diversas linguagens de programação, como PHP, MySQL oferece uma solução robusta para armazenar e manipular dados. Sua escalabilidade e eficiência o tornam uma escolha popular para aplicações de todos os tamanhos. 
+                        </p>
+                    </div>
+                  </div>
+             </div>
+        </section> <!-- tecnologias -->
+
+        <section id="secão-projetos" class="portfolio">
+            <!-- Seção de Portfólio -->
+            <div class="interface">
+                <!-- Contêiner principal da seção -->
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <!-- Título da seção com destaque -->
+                <div class="flex">
+                    <!-- Container para os itens do portfólio -->
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                         <!-- Box para o Projeto 1 com imagem de fundo -->
+                        <div class="overlay">Projeto 1</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <!-- Box para o Projeto 2 com imagem de fundo -->
+                        <div class="overlay">Projeto 2</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <!-- Box para o Projeto 3 com imagem de fundo -->
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="secao-contato" class="formulario">
+            <!-- Seção de Contato -->
+           <div class="interface">
+            <!-- Contêiner principal da seção -->
+             <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+             <form action="">
+                <!-- Formulário para contato -->
+                <input type="text" name="" id="" placeholder="Seu nome:" required>
+                 <!-- Campo de entrada para o nome, obrigatório -->
+                <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                <!-- Campo de entrada para o e-mail, obrigatório -->
+                <input type="text" name="" id="" placeholder="Seu celular:">
+                <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                <div class="btn-enviar"><input type="submit" value="ENVIAR"></div> <!-- Botão para enviar o formulário -->
+             </form>
+           </div>
+        </section> <!-- formulario -->
+    </main>
+
+</body>
+</html>

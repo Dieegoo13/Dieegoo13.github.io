@@ -1,0 +1,363 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Seleciona o elemento <body> */
+body{ 
+    background-color: #000;
+    height: 100vh;
+}
+
+ /* Seleciona elementos com a classe "interface" */
+
+.interface{
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+/* Seleciona elementos com a classe "flex" */
+
+.flex{
+    display: flex;
+}
+
+/* Seleciona o <button> dentro de um elemento com a classe "btn-contato" */
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #02afff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Seleciona <span> dentro de um <h2> com a classe "titulo" */
+
+h2.titulo{
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #02afff;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #02afff;
+    transform: scale(1.15);
+}
+
+/* ESTILO DO CABEÇALHO */
+
+/* Seleciona o elemento <header> */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Seleciona elementos <a> dentro de <header> */
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.15);
+}
+
+ /* Seleciona <ul> dentro de <header> */
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #00f7fffd;
+    transform: scale(1.15);
+}
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+/* Seleciona <span> dentro de <h1> com a classe "txt-topo-site" */
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #02afff;
+    font-size: 50px;
+}
+
+ /* Seleciona <p> dentro de um elemento com a classe "txt-topo-site" na seção com a classe "topo-do-site" */
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* Seleciona elementos com a classe "txt-topo-site" */
+
+.txt-topo-site {
+    margin-left: -200px;  
+    margin-top: 220px;    
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS TECNOLOGIAS */
+
+section.tecnologias{
+  padding: 40px 4%;
+}
+
+section.tecnologias .flex{
+    gap: 60px;
+}
+  
+
+.tecnologias .especialidade-box{
+   color: #fff;
+   padding: 40px;
+   border-radius: 20px;
+   margin-top: 45px;
+   transition: .2s;
+}
+
+.tecnologias .especialidade-box:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 10px #ffffff8e;
+}
+
+.tecnologias .especialidade-box img{
+ width: 130px;
+}
+
+.tecnologias .especialidade-box h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+/* ESTILO PORTFÓLIO */
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff3e;
+
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+     /* Seleciona elementos com a classe "img-port" */
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+      /* Seleciona elementos com a classe "img-port" em estado hover */
+    background-position: 100% 100%;
+
+}
+
+.overlay{
+     /* Seleciona elementos com a classe "overlay" */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000062;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    /* Seleciona elementos com a classe "overlay" em estado hover */
+    opacity: 1;
+}
+
+/* ESTILO DO FORMULARIO DE CONTATO */
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    outline: 0;
+    border: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+form textarea{
+    /* Seleciona elementos <input> e <textarea> dentro de <form> */
+    resize: none;
+    max-height: 200px;
+    
+}
+
+form .btn-enviar{
+     /* Seleciona elementos com a classe "btn-enviar" dentro de <form> */
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+     /* Seleciona <input> dentro de elementos com a classe "btn-enviar" dentro de <form> */
+    width: 120px;
+    background-color: #02afff;
+    color: #000; 
+    cursor: pointer;
+    font-weight: 700;    
+    transition: .2s;
+}
+
+
+@media screen and (max-width: 1020px){
+    /* Define estilos específicos para telas com largura máxima de 1020px */
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h2 {
+        font-size: 24px;
+        width: 135%;
+       
+    }
+
+    .centralizado {
+        width: 100%; 
+        max-width: 500px; 
+        padding-left: 180px;
+        text-align: center; 
+        font-size: 17px;
+        margin: 0 auto; 
+    }
+    
+    /* TECNOLOGIAS */
+
+    section.tecnologias{
+        padding: 40px 8%;
+      }
+    
+
+    h2.titulo{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* PORTFOLIO */
+
+    section.portfolio{
+        padding: 80px 8%;
+    
+    }
+
+    .img-port{
+        width: 100%;
+    }
+
+    section.portfolio .flex{
+        gap: 50px;
+    }
+
+    section.topo-do-site .flex {
+        gap: 0px;
+    }
+    
+}

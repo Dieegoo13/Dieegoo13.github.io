@@ -1,148 +1,400 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-
-    <!-- FONTES DO GOOGLE -->
+    <link rel="stylesheet" href="estilo.css"> <!-- FONTES DO GOOGLE -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- FIM FONTES DO GOOGLE -->
 
+    <!-- ÍCONES FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- FIM FONTES DO GOOGLE -->
     <title>Portfolio</title>
 </head>
-<body>
 
+<body>
     <header>
         <div class="interface">
-
-         <nav class="menu-desktop">   <!-- NAVEGAÇÂO DOS MENUS -->
-
-            <ul>
-                <li><a href="#secão-home">Sobre mim</a></li>
-                <li><a href="#secão-tecnologias">Especialidades (formação)</a></li>
-                <li><a href="#secão-projetos">Portfólio</a></li>
-            </ul>
-
-         </nav> 
-
-         <div class="btn-contato">
-            <a href="#secao-contato">
-               <button>Contato</button>
-            </a>
-         </div>
-
-        </div>  <!-- interface -->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#secão-home">Sobre mim</a></li>
+                    <li><a href="#secao-tecnologias">Skills</a></li>
+                    <li><a href="#secão-projetos">Projetos</a></li>
+                    <li><a href="#secão-formacao">Formação</a></li>
+                </ul>
+            </nav>
+            <div class="botoes">
+                <a href="arquivos/curriculo.pdf" download="DiegoMirandaDev.pdf" class="btn-curriculo">
+                    Download Currículo ↓
+                </a>
+                <a href="#secao-contato">Contato</a>
+            </div>
+        </div>
     </header>
 
-    <main>
+
+    <main class="container-main">
         <!-- Seção principal do site -->
-        <section id="secão-home" class="topo-do-site">   <!-- SEÇÂO HOME -->
+        <!-- Seção HOME -->
+        <section id="secão-home" class="topo-do-site">
             <div class="interface">
-                <div class="flex">
-                     <!-- Container para o texto e imagem -->
+                <div class="home"> <!-- Container para o texto e imagem -->
+
+                    <!-- Texto principal -->
                     <div class="txt-topo-site">
-                        <h2 class="titulo">MUITO PRAZER <span>SOU DIEGO.</span> </h2>
-                         <!-- Parágrafo centralizado com quebra de linha -->
-                        <p class="centralizado">
-                            Meu nome é Diego, sou estudante de desenvolvimento de sistemas, com foco em back-end. <br> Tenho interesse em criar soluções escaláveis, e estou em constante aprendizado para aprimorar <br> minhas habilidades em linguagens como PHP, Python, MySQL e em frameworks como Laravel e Django. <br> Estou sempre em busca de novos desafios que me permitam crescer profissionalmente e contribuir de maneira <br> significativa em projetos de desenvolvimento de software.
+                        <h2 class="titulo">MUITO PRAZER <span>SOU DIEGO.</span></h2>
+
+                        <p class="centralizado texto-sobre">
+                            Meu nome é Diego, sou estudante de desenvolvimento de sistemas, com foco em back-end.
+                            Tenho interesse em criar soluções escaláveis, e estou em constante aprendizado para
+                            aprimorar minhas habilidades em linguagens como PHP, Python, MySQL e em frameworks como
+                            Laravel e Django. Estou sempre em busca de novos desafios que me permitam crescer
+                            profissionalmente e contribuir de maneira significativa em projetos de desenvolvimento
+                            de software.
                         </p>
-                        <!-- Botão para contato -->
-                        <div class="btn-contato">
-                            <a href="#secao-contato">
-                                <button>Entre em contato</button>
+                    </div>
+
+                    <!-- Imagem e informações -->
+                    <div class="img-topo-site">
+                        <img src="imagens/foto.jpg" alt="foto">
+
+                        <!-- Links sociais com ícones -->
+                        <div class="infos">
+                            <a href="https://github.com/Dieegoo13" target="_blank" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/diego-miranda-0238b02aa" target="_blank"
+                                title="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+
+                            <a href="mailto:diegomiranda1310@gmail.com" title="Email">
+                                <i class="fa-solid fa-envelope"></i>
                             </a>
                         </div>
+
+                        <hr>
+
+                        <div class="email">
+                            <p>diegomiranda1310&#64;gmail&#46;com</p>
+                        </div>
                     </div>
-                      <!-- Container para a imagem -->
-                    <div class="img-topo-site">
-                        <img src="imagens/Untitled Project.jpg" alt="foto" width="220px" height="220px">
-                    </div>
+
                 </div>
-            </div>
-        </section>  <!-- topo do site -->
-
-        <section id="secão-tecnologias" class="tecnologias">
-            <!-- Seção de Tecnologias e formação-->
-             <div class="interface">
-                <!-- Contêiner principal da seção -->
-                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
-                <!-- Título da seção com destaque -->
-                  <div class="flex">
-                    <!-- Container para os boxes de especialidades -->
-                    <div class="especialidade-box">
-                        <!-- Box para especialidade PHP -->
-                        <img src="imagens/icone-php.png" alt="logo-php">
-                        <h3>PHP</h3>
-                        <p>
-                            PHP é uma linguagem de programação amplamente utilizada para desenvolvimento web.  Com sua flexibilidade, PHP se adapta a diversas necessidades, desde pequenos sites até grandes sistemas web. integrando-se perfeitamente a bancos de dados para gerenciar e exibir informações de forma eficiente. 
-                        </p>
-                    </div>
-
-                    <div class="especialidade-box">
-                         <!-- Box para especialidade Python -->
-                        <img src="imagens/icone-python.webp" alt="logo-python">
-                        <h3>Python</h3>
-                        <p>
-                            Python é uma linguagem de programação poderosa e versátil, conhecida por sua simplicidade e clareza. É utilizada em uma ampla gama de aplicações, desde desenvolvimento web até ciência de dados e automação. Com frameworks como Django, Python facilita a criação de soluções robustas e escaláveis, sendo uma ferramenta valiosa para desenvolvedores em diversos campos.
-                        </p>
-                    </div>
-
-                    <div class="especialidade-box">
-                        <!-- Box para especialidade MySQL -->
-                        <img src="imagens/icone-mySql.png" alt="logo-MySQL">
-                        <h3>MySQL</h3>
-                        <p>
-                            MySQL é um sistema de gerenciamento de banco de dados relacional conhecido por sua confiabilidade e desempenho. Utilizado em conjunto com diversas linguagens de programação, como PHP, MySQL oferece uma solução robusta para armazenar e manipular dados. Sua escalabilidade e eficiência o tornam uma escolha popular para aplicações de todos os tamanhos. 
-                        </p>
-                    </div>
-                  </div>
-             </div>
-        </section> <!-- tecnologias -->
-
-        <section id="secão-projetos" class="portfolio">
-            <!-- Seção de Portfólio -->
-            <div class="interface">
-                <!-- Contêiner principal da seção -->
-                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
-                <!-- Título da seção com destaque -->
-                <div class="flex">
-                    <!-- Container para os itens do portfólio -->
-                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
-                         <!-- Box para o Projeto 1 com imagem de fundo -->
-                        <div class="overlay">Projeto 1</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
-                        <!-- Box para o Projeto 2 com imagem de fundo -->
-                        <div class="overlay">Projeto 2</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
-                        <!-- Box para o Projeto 3 com imagem de fundo -->
-                        <div class="overlay">Projeto 3</div>
-                    </div>
-                </div>
-                
             </div>
         </section>
 
-        <section id="secao-contato" class="formulario">
-            <!-- Seção de Contato -->
-           <div class="interface">
-            <!-- Contêiner principal da seção -->
-             <h2 class="titulo">FALE <span>COMIGO.</span></h2>
-             <form action="">
-                <!-- Formulário para contato -->
-                <input type="text" name="" id="" placeholder="Seu nome:" required>
-                 <!-- Campo de entrada para o nome, obrigatório -->
-                <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                <!-- Campo de entrada para o e-mail, obrigatório -->
-                <input type="text" name="" id="" placeholder="Seu celular:">
-                <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-                <div class="btn-enviar"><input type="submit" value="ENVIAR"></div> <!-- Botão para enviar o formulário -->
-             </form>
-           </div>
-        </section> <!-- formulario -->
-    </main>
 
+        <!-- topo do site -->
+
+
+        <section id="secao-tecnologias" class="tecnologias"> <!-- Seção de Tecnologias e formação -->
+            <div class="interface"> <!-- Contêiner principal da seção -->
+                <h2 class="titulo">MINHAS <span>SKILLS.</span></h2>
+
+                <div class="container-tecnologias">
+
+                    <div class="skills">
+                        <h3><span class="pipe">&#9474;</span> FRONT-END</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="imagens/html.png" alt="HTML">
+                                <p>HTML</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="imagens/css.png" alt="CSS">
+                                <p>CSS</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="imagens/javascript.png" alt="JavaScript">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h3><span class="pipe">&#9474;</span> BACK-END</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="imagens/icone-php.png" alt="PHP">
+                                <p>PHP</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="imagens/icone-python.webp" alt="Python">
+                                <p>Python</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="imagens/javascript.png" alt="JavaScript">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h3><span class="pipe">&#9474;</span> BANCO DE DADOS</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="imagens/icone-mySql.png" alt="MySQL">
+                                <p>MySQL</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="imagens/postgresql.png" alt="PostgreSQL">
+                                <p>PostgreSQL</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h3><span class="pipe">&#9474;</span> FRAMEWORKS</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="imagens/laravel.png" alt="Laravel">
+                                <p>Laravel</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="imagens/django.png" alt="Django">
+                                <p>Django</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="imagens/bootstrap.png" alt="Bootstrap">
+                                <p>Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h3><span class="pipe">&#9474;</span> FERRAMENTAS</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="imagens/linux.png" alt="Linux">
+                                <p>Linux</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="imagens/apache.png" alt="APACHE">
+                                <p>APACHE</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="imagens/figma.png" alt="Figma">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skills">
+                        <h3><span class="pipe">&#9474;</span> VERSIONAMENTO</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="imagens/git.png" alt="Git">
+                                <p>Git</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="imagens/github.png" alt="GitHub">
+                                <p>GitHub</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- tecnologias -->
+
+
+        <section id="secão-projetos" class="projetos"> <!-- Seção de Portfólio -->
+            <div class="interface"> <!-- Contêiner principal da seção -->
+                <h2 class="titulo">MEUS <span>PROJETOS.</span></h2> <!-- Título da seção com destaque -->
+                <div class="container-projetos"> <!-- Container para os itens do portfólio -->
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">
+                            <div class="overlay-top">
+                                <p>Projeto 3</p>
+                                <div class="icons">
+                                    <a href="https://github.com/Dieegoo13" target="_blank" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://site.com" target="_blank" title="Ver Projeto">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">
+                            <div class="overlay-top">
+                                <p>Projeto 3</p>
+                                <div class="icons">
+                                    <a href="https://github.com/Dieegoo13" target="_blank" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://site.com" target="_blank" title="Ver Projeto">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">
+                            <div class="overlay-top">
+                                <p>Projeto 3</p>
+                                <div class="icons">
+                                    <a href="https://github.com/Dieegoo13" target="_blank" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://site.com" target="_blank" title="Ver Projeto">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">
+                            <div class="overlay-top">
+                                <p>Projeto 3</p>
+                                <div class="icons">
+                                    <a href="https://github.com/Dieegoo13" target="_blank" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">
+                            <div class="overlay-top">
+                                <p>Projeto 3</p>
+                                <div class="icons">
+                                    <a href="https://github.com/Dieegoo13" target="_blank" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">
+                            <div class="overlay-top">
+                                <p>Projeto 3</p>
+                                <div class="icons">
+                                    <a href="https://github.com/Dieegoo13" target="_blank" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">
+                            <div class="overlay-top">
+                                <p>Projeto 3</p>
+                                <div class="icons">
+                                    <a href="https://github.com/Dieegoo13" target="_blank" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">
+                            <div class="overlay-top">
+                                <p>Projeto 3</p>
+                                <div class="icons">
+                                    <a href="https://github.com/Dieegoo13" target="_blank" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="secão-formacao" class="formacao"> <!-- Seção de Portfólio -->
+            <div class="interface"> <!-- Contêiner principal da seção -->
+                <h2 class="titulo">MINHAS <span>FORMAÇÕES.</span></h2> <!-- Título da seção com destaque -->
+                <div class="container-formacao"> <!-- Container para os itens do portfólio -->
+                    <div class="card-formacao">
+                        <h3>🎓 Formação Acadêmica</h3>
+
+                        <p><strong>Curso:</strong> Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+                        <p><strong>Instituição:</strong> Centro Universitário Internacional – UNINTER</p>
+                        <p><strong>Conclusão:</strong> 07/2026</p>
+                        <p>
+                            Curso superior voltado ao desenvolvimento de software e à análise de sistemas. Abrange desde
+                            a lógica de programação
+                            até o uso de linguagens como PHP, Python e JavaScript, além de bancos de dados e frameworks
+                            modernos. Foco em
+                            projetar, desenvolver e implementar soluções tecnológicas completas.
+                        </p>
+                    </div>
+
+                    <div class="card-formacao">
+                        <h3>💻 Curso Técnico em Informática</h3>
+
+                        <p><strong>Curso:</strong> Técnico em Informática</p>
+                        <p><strong>Instituição:</strong> PRONATEC – SEE/MG (Secretaria de Estado de Educação de Minas
+                            Gerais)</p>
+                        <p><strong>Conclusão:</strong> 08/2026</p>
+                        <p>
+                            Formação técnica abrangente em TI, abordando programação, bancos de dados, manutenção de
+                            computadores,
+                            montagem e configuração de hardware, redes de computadores, administração de sistemas
+                            operacionais,
+                            segurança da informação e desenvolvimento de soluções digitais. O curso oferece
+                            conhecimentos práticos
+                            e teóricos para atuar em diversas áreas da tecnologia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="secao-contato" class="formulario"> <!-- Seção de Contato -->
+            <div class="interface">
+                <!-- Aviso do formulário -->
+                <p class="aviso-formulario">
+                    ⚠️ Este formulário está apenas
+                    como ilustração. O envio de mensagens está
+                    desativado na versão hospedada.
+                </p>
+
+                <!-- Título da seção -->
+                <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+
+                <!-- Formulário -->
+                <form action="">
+                    <input type="text" name="nome" placeholder="Seu nome:" required>
+                    <input type="email" name="email" placeholder="Seu e-mail:" required>
+                    <input type="text" name="celular" placeholder="Seu celular:">
+                    <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- formulario -->
+    </main>
 </body>
+
 </html>

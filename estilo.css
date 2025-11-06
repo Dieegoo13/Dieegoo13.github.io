@@ -689,6 +689,10 @@ form .btn-enviar input:hover {
 .card-formacao p {
   line-height: 1.8;
 }
+
+.aviso-formulario {
+  font-size: 13px;
+}
 }
 
 /* Telas até 768px (celulares grandes) */

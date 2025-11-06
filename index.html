@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- FIM FONTES DO GOOGLE -->
+
+    <link rel="icon" type="image/png" href="imagens/fiveicon.png">
     <title>Portfolio</title>
 </head>
 
 <body>
     <header>
         <div class="interface">
+            <!-- Menu desktop -->
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="#secão-home">Sobre mim</a></li>
@@ -25,14 +28,36 @@
                     <li><a href="#secão-formacao">Formação</a></li>
                 </ul>
             </nav>
+
+            <!-- Botões desktop -->
             <div class="botoes">
                 <a href="arquivos/curriculo.pdf" download="DiegoMirandaDev.pdf" class="btn-curriculo">
                     Download Currículo ↓
                 </a>
                 <a href="#secao-contato">Contato</a>
             </div>
+
+            <!-- Ícone do menu hambúrguer (mobile) -->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- Menu mobile -->
+        <div class="menu-mobile" id="menu-mobile">
+            <ul>
+                <li><a href="#secão-home">Sobre mim</a></li>
+                <li><a href="#secao-tecnologias">Skills</a></li>
+                <li><a href="#secão-projetos">Projetos</a></li>
+                <li><a href="#secão-formacao">Formação</a></li>
+            </ul>
+            <a href="arquivos/curriculo.pdf" download="DiegoMirandaDev.pdf" class="btn-curriculo">
+                Download Currículo ↓
+            </a>
+            <a href="#secao-contato">Contato</a>
         </div>
     </header>
+
 
 
     <main class="container-main">
@@ -127,8 +152,8 @@
                                 <p>Python</p>
                             </div>
                             <div class="skill-item">
-                                <img src="imagens/javascript.png" alt="JavaScript">
-                                <p>JavaScript</p>
+                                <img src="imagens/node.png" alt="Node">
+                                <p>Node</p>
                             </div>
                         </div>
                     </div>
@@ -396,5 +421,14 @@
         <!-- formulario -->
     </main>
 </body>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuMobile = document.getElementById('menu-mobile');
+
+    menuToggle.addEventListener('click', () => {
+        menuMobile.classList.toggle('ativo');
+    });
+</script>
 
 </html>

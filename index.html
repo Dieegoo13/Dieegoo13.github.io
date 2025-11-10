@@ -42,21 +42,45 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
-
-        <!-- Menu mobile -->
-        <div class="menu-mobile" id="menu-mobile">
-            <ul>
-                <li><a href="#secão-home">Sobre mim</a></li>
-                <li><a href="#secao-tecnologias">Skills</a></li>
-                <li><a href="#secão-projetos">Projetos</a></li>
-                <li><a href="#secão-formacao">Formação</a></li>
-            </ul>
-            <a href="arquivos/curriculo.pdf" download="DiegoMirandaDev.pdf" class="btn-curriculo">
-                Download Currículo ↓
-            </a>
-            <a href="#secao-contato">Contato</a>
-        </div>
     </header>
+
+    <!-- =========================================
+     📱 MENU MOBILE (SIDEBAR)
+========================================= -->
+    <div class="menu-mobile" id="menu-mobile">
+        <!-- Botão fechar -->
+        <button class="menu-close" id="menu-close" aria-label="Fechar menu">
+            <i class="fa-solid fa-times"></i>
+        </button>
+
+        <!-- Links de navegação -->
+        <ul>
+            <li><a href="#secão-home">Sobre mim</a></li>
+            <li><a href="#secao-tecnologias">Skills</a></li>
+            <li><a href="#secão-projetos">Projetos</a></li>
+            <li><a href="#secão-formacao">Formação</a></li>
+        </ul>
+
+        <!-- Divisor visual -->
+        <div class="menu-mobile-divider"></div>
+
+        <!-- Botões de ação -->
+        <div class="menu-mobile-buttons">
+            <a href="arquivos/curriculo.pdf" download="DiegoMirandaDev.pdf" class="btn-curriculo">
+                <i class="fa-solid fa-download"></i>
+                Download Currículo
+            </a>
+            <a href="#secao-contato">
+                <i class="fa-solid fa-envelope"></i>
+                Contato
+            </a>
+        </div>
+    </div>
+
+    <!-- =========================================
+     🌑 OVERLAY (FUNDO ESCURO)
+========================================= -->
+    <div class="overlay-menu" id="overlay-menu"></div>
 
 
 
@@ -72,7 +96,12 @@
                         <h2 class="titulo">MUITO PRAZER <span>SOU DIEGO.</span></h2>
 
                         <p class="centralizado texto-sobre">
-                            Meu nome é Diego, sou desenvolvedor de sistemas com foco em back-end. Tenho grande interesse em criar soluções escaláveis e eficientes, e estou em constante evolução e no aperfeiçoamento das minhas habilidades em linguagens como PHP, Python e JavaScript, além de experiência com frameworks como Laravel e Django. Busco constantemente novos desafios que me permitam crescer profissionalmente e contribuir de forma significativa para projetos de desenvolvimento de software.
+                            Meu nome é Diego, sou desenvolvedor de sistemas com foco em back-end. Tenho grande interesse
+                            em criar soluções escaláveis e eficientes, e estou em constante evolução e no
+                            aperfeiçoamento das minhas habilidades em linguagens como PHP, Python e JavaScript, além de
+                            experiência com frameworks como Laravel e Django. Busco constantemente novos desafios que me
+                            permitam crescer profissionalmente e contribuir de forma significativa para projetos de
+                            desenvolvimento de software.
                         </p>
                     </div>
 
@@ -235,12 +264,48 @@
                     <div class="img-port" style="background-image: url(imagens/meetminas.png);">
                         <div class="overlay">
                             <div class="overlay-top">
+                                <p>jogo Da Memoria</p>
+                                <div class="icons">
+                                    <a href="https://github.com/Dieegoo13" target="_blank" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="site.com" target="_blank" title="Ver Projeto">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="img-port" style="background-image: url(imagens/meetminas.png);">
+                        <div class="overlay">
+                            <div class="overlay-top">
+                                <p>Tour BH</p>
+                                <div class="icons">
+                                    <a href="https://github.com/Dieegoo13/meet-minas" target="_blank" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://dieegoo13.github.io/meet-minas" target="_blank"
+                                        title="Ver Projeto">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="img-port" style="background-image: url(imagens/meetminas.png);">
+                        <div class="overlay">
+                            <div class="overlay-top">
                                 <p>Meet Minas</p>
                                 <div class="icons">
                                     <a href="https://github.com/Dieegoo13/meet-minas" target="_blank" title="GitHub">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="https://dieegoo13.github.io/meet-minas" target="_blank" title="Ver Projeto">
+                                    <a href="https://dieegoo13.github.io/meet-minas" target="_blank"
+                                        title="Ver Projeto">
                                         <i class="fa-solid fa-eye"></i>
                                     </a>
                                 </div>
@@ -268,14 +333,16 @@
                         <div class="overlay">
                             <div class="overlay-top">
                                 <p>
-                                    Yu-Gi-Oh <br> 
+                                    Yu-Gi-Oh <br>
                                     Jo-Ken-Po Edition
                                 </p>
                                 <div class="icons">
-                                    <a href="https://github.com/Dieegoo13/Jogo-De-Cartas-YuGiOh" target="_blank" title="GitHub">
+                                    <a href="https://github.com/Dieegoo13/Jogo-De-Cartas-YuGiOh" target="_blank"
+                                        title="GitHub">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="https://jogo-de-cartas-yu-gi-oh.vercel.app" target="_blank" title="Ver Projeto">
+                                    <a href="https://jogo-de-cartas-yu-gi-oh.vercel.app" target="_blank"
+                                        title="Ver Projeto">
                                         <i class="fa-solid fa-eye"></i>
                                     </a>
                                 </div>
@@ -288,10 +355,12 @@
                             <div class="overlay-top">
                                 <p>Nutri Mari Hoffmann</p>
                                 <div class="icons">
-                                    <a href="https://github.com/Dieegoo13/Nutri-MariHoffmann" target="_blank" title="GitHub">
+                                    <a href="https://github.com/Dieegoo13/Nutri-MariHoffmann" target="_blank"
+                                        title="GitHub">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="https://nutri-mari-hoffmann.vercel.app" target="_blank" title="Ver Projeto">
+                                    <a href="https://nutri-mari-hoffmann.vercel.app" target="_blank"
+                                        title="Ver Projeto">
                                         <i class="fa-solid fa-eye"></i>
                                     </a>
                                 </div>
@@ -317,7 +386,8 @@
                             <div class="overlay-top">
                                 <p>Conversor de Moedas</p>
                                 <div class="icons">
-                                    <a href="https://github.com/Dieegoo13/Conversor-de-Moedas" target="_blank" title="GitHub">
+                                    <a href="https://github.com/Dieegoo13/Conversor-de-Moedas" target="_blank"
+                                        title="GitHub">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
                                 </div>
@@ -330,7 +400,8 @@
                             <div class="overlay-top">
                                 <p>Pizza & Parla</p>
                                 <div class="icons">
-                                    <a href="https://github.com/Dieegoo13/pizzaria-pizzaeparla" target="_blank" title="GitHub">
+                                    <a href="https://github.com/Dieegoo13/pizzaria-pizzaeparla" target="_blank"
+                                        title="GitHub">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
                                 </div>
@@ -345,6 +416,41 @@
                                 <div class="icons">
                                     <a href="https://github.com/Dieegoo13" target="_blank" title="GitHub">
                                         <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(imagens/meetminas.png);">
+                        <div class="overlay">
+                            <div class="overlay-top">
+                                <p>Gerador de senha forte ou conversor MP3</p>
+                                <div class="icons">
+                                    <a href="https://github.com/Dieegoo13/meet-minas" target="_blank" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://dieegoo13.github.io/meet-minas" target="_blank"
+                                        title="Ver Projeto">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="img-port" style="background-image: url(imagens/meetminas.png);">
+                        <div class="overlay">
+                            <div class="overlay-top">
+                                <p>ClimaNow</p>
+                                <div class="icons">
+                                    <a href="https://github.com/Dieegoo13/meet-minas" target="_blank" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://dieegoo13.github.io/meet-minas" target="_blank"
+                                        title="Ver Projeto">
+                                        <i class="fa-solid fa-eye"></i>
                                     </a>
                                 </div>
                             </div>
@@ -403,7 +509,7 @@
                     ⚠️ FORMULÁRIO INATIVO! <br>
                     envio de mensagens está
                     desativado na versão hospedada.
-                    Fale comigo pelo email: 
+                    Fale comigo pelo email:
                     <strong>diegomiranda1310&#64;gmail&#46;com</strong>
                 </p>
 
@@ -427,13 +533,6 @@
     </main>
 </body>
 
-<script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const menuMobile = document.getElementById('menu-mobile');
-
-    menuToggle.addEventListener('click', () => {
-        menuMobile.classList.toggle('ativo');
-    });
-</script>
+<script src="main.js"></script>
 
 </html>
